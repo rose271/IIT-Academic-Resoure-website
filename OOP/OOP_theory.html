@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year Wise OOP Questions</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel ="stylesheet" href="css/style_question.css">
+  <link rel="stylesheet" href="css/style_navbar.css">
+
+</head>
+<body class="bg-light">
+  <header class="site-header" id="site-header" aria-label="Top Navigation">
+        <nav class="navbar container-fluid" aria-label="Primary">
+          <!-- Left: JU logo linking to university homepage -->
+          <a
+            class="brand"
+            href="../Home/index.html"
+            target="_self"
+            rel="noopener"
+            aria-label="Jahangirnagar University (opens in new tab)"
+          >
+            <img
+              src="images/iit-logo cropped.png "
+              alt="Jahangirnagar University"
+              id="juLogo"
+            />
+            <span class="brand-text"></span>
+          </a>
+
+          <!-- Hamburger for mobile -->
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="primaryMenu"
+            aria-label="Toggle navigation"
+          >
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+          </button>
+
+          <!-- Right/center: Year navigation -->
+          <ul class="nav-menu">
+            <!-- First Year -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">First Year</a>
+              <ul class="dropdown-menu">
+                <!-- 1st Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">1st Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link">Introduction to ICT</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Structured Programming Language
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Electrical Circuits</a>
+                    </li>
+                    <li><a href="#" class="dropdown-link">Physics</a></li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Differential and Integral Calculus</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Communicative English</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- 2nd Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">2nd Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Electronic Devices and Circuits</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../OOP/OOP_page.html" class="dropdown-link"
+                        >Object Oriented Programming</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Linear Algebra and Analytical Geometry</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Discrete Mathematics</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Bangladesh Studies</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-subitem">
+                  <a href="../Home/main project/first year/index.html" class="dropdown-link">Project</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Second Year -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">Second Year</a>
+              <ul class="dropdown-menu">
+                <!-- 1st Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">1st Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link">Data Structures</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Digital Logic Design</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Numerical Analysis</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Statistics and Probability for Engineers</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Data Communication</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Internet and Web Technology Lab</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- 2nd Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">2nd Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Algorithm Analysis and Design</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Database Management System</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Analog and Digital Communication</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Matrices, Vector, Fourier Analysis and Laplace
+                        Transforms</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Financial and Managerial Accounting</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">Project</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Third Year -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">Third Year</a>
+              <ul class="dropdown-menu">
+                <!-- 1st Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">1st Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link">Operating System</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Computer Networks</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >ICT Business Analytics and Data Visualization</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Information and Data Security</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Principles of Economics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- 2nd Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">2nd Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link">Software Engineering</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Computer Architecture and Microprocessor</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Signals and Systems</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Server Administration and Management</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Smart Sensors and Internet of Things</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">Project</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Fourth Year -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">Fourth Year</a>
+              <ul class="dropdown-menu">
+                <!-- 1st Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">1st Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Digital Signal Processing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Mobile Application Development</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Cyber Security</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Cryptography and Network Security</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Big Data Analytics and Application</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Optical Fiber Communication</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >IT Professional and Ethics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >IT Project and Service Management</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">IT Risk Management</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- 2nd Semester -->
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">2nd Semester</a>
+                  <ul class="dropdown-menu-sub">
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Parallel and Distributed System</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Wireless and Cellular Networks</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link"
+                        >Data Mining and Knowledge Discovery</a
+                      >
+                    </li>
+                    <li><a href="#" class="dropdown-link">Data Science</a></li>
+                    <li>
+                      <a href="#" class="dropdown-link">Machine Learning</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-link">Bio-informatics</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-subitem">
+                  <a href="#" class="dropdown-link">Project</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+<div class="container py-5">
+  <h2 class="text-center mb-4 fw-bold">Year Wise OOP Questions</h2>
+
+  <!-- Search Bar -->
+  <div class="mb-4">
+    <input type="text" class="form-control" id="searchInput" placeholder="Search batch or question...">
+  </div>
+
+  <div class="accordion" id="yearAccordion">
+
+   <h4 class="text-secondary mt-3 mb-2">Question 2020</h4>
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="heading53">
+        <button class="accordion-button  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse50" style="background-color:#11446c ;">
+          Batch 50 <span class="badge bg-light text-dark ms-2">0 Files</span>
+        </button>
+      </h2>
+      <div id="collapse50" class="accordion-collapse collapse" data-bs-parent="#yearAccordion">
+        <div class="accordion-body">
+          No files uploaded yet.
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Year -->
+    <h4 class="text-secondary mt-3 mb-2">Question 2021</h4>
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="heading51">
+        <button class="accordion-button  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse51"style="background-color:#11446c ;">
+          Batch 51 <span class="badge bg-light text-dark ms-2">1 File</span>
+        </button>
+      </h2>
+      <div id="collapse51" class="accordion-collapse collapse" data-bs-parent="#yearAccordion">
+        <div class="accordion-body">
+          <a href="pdf/OOP question 51.pdf" class="btn btn-outline-primary btn-sm me-2">View</a>
+
+          <a href="pdf/OOP question 51.pdf" download class="btn btn-success btn-sm">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Year -->
+    <h4 class="text-secondary mt-3 mb-2">Question 2022</h4>
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="heading52">
+        <button class="accordion-button  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse52" style="background-color:#11446c ;">
+          Batch 52 <span class="badge bg-light text-dark ms-2">1 File</span>
+        </button>
+      </h2>
+      <div id="collapse52" class="accordion-collapse collapse" data-bs-parent="#yearAccordion">
+        <div class="accordion-body">
+          <a href="pdf/OOP question 52.pdf" class="btn btn-outline-primary btn-sm me-2">View</a>
+
+          <a href="pdf/OOP question 52.pdf" download class="btn btn-success btn-sm">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Year -->
+    <h4 class="text-secondary mt-3 mb-2">Question 2023</h4>
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="heading53">
+        <button class="accordion-button  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse53" style="background-color:#11446c ;">
+          Batch 53 <span class="badge bg-light text-dark ms-2">0 Files</span>
+        </button>
+      </h2>
+      <div id="collapse53" class="accordion-collapse collapse" data-bs-parent="#yearAccordion">
+        <div class="accordion-body">
+          No files uploaded yet.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Footer -->
+      <footer class="iit-footer">
+        <div class="container">
+          <div class="iit-footer__columns">
+            <!-- Column 1: Institutional Identity -->
+            <div class="iit-footer__column">
+              <div class="iit-footer__logo">
+                <img
+                  src="images/iit-logo cropped.png"
+                  alt="IIT Jahangirnagar University Logo"
+                />
+              </div>
+              <div class="iit-footer__info">
+                <p>Jahangirnagar University, Savar, Dhaka-1342, Bangladesh.</p>
+                <p>+88 02224491045-51</p>
+                <p>iit@juniv.edu</p>
+              </div>
+            </div>
+
+            <!-- Column 2: Main Navigation -->
+            <div class="iit-footer__column">
+              <h4 class="iit-footer__heading">Main Navigation</h4>
+              <ul class="iit-footer__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Student Activities</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Information For -->
+            <div class="iit-footer__column">
+              <h4 class="iit-footer__heading">Information For</h4>
+              <ul class="iit-footer__links">
+                <li><a href="#">Undergraduate</a></li>
+                <li><a href="#">Graduate</a></li>
+                <li><a href="#">PMIT</a></li>
+                <li><a href="#">PGDIT</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Quick Links -->
+            <div class="iit-footer__column">
+              <h4 class="iit-footer__heading">Quick Links</h4>
+              <ul class="iit-footer__links">
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Notices</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom Row: Social Media Icons -->
+          <div class="iit-footer__social">
+            <a
+              href="https://www.facebook.com/groups/138289376248644"
+              class="social-icon"
+              ><i class="bi bi-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="bi bi-twitter" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/groups/14273407/"
+              class="social-icon"
+              ><i class="bi bi-linkedin" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional: Simple Search Script -->
+<script>
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('keyup', function() {
+    const filter = searchInput.value.toLowerCase();
+    const items = document.querySelectorAll('.accordion-item');
+    items.forEach(item => {
+      const text = item.innerText.toLowerCase();
+      if(text.includes(filter)) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

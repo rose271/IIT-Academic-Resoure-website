@@ -1,0 +1,506 @@
+/* ====== Global Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ====== Hero Section ====== */
+#hero {
+  height: 80vh;
+  background: url("images/hero bg.jpg") center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay */
+  z-index: 1;
+}
+
+#hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* ====== Hero Buttons ====== */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#hero button,
+#hero .home-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Start Exploring Button */
+#hero button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+#hero button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Home Button */
+#hero .home-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  line-height: 1.2;
+  padding: 10px 25px;
+}
+
+#hero .home-btn:hover {
+  background-color: white;
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+/* ====== General Sections ====== */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section header h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+section header p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ====== Cards Layout ====== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Card */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Lists inside cards (for research interests) */
+.card ul {
+  text-align: left;
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ====== Clubs / Special Sections ====== */
+#clubs {
+  padding: 60px 20px;
+  background-color: #f1f4f8; /* light neutral background */
+  border-radius: 10px;
+  max-width: 1162px;
+  margin: 50px auto;
+}
+
+#clubs header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #007bff;
+}
+
+#clubs header p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Club Cards */
+#clubs .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#clubs .card {
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#clubs .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ====== Events Section ====== */
+/* ====== Events Section Background ====== */
+#events {
+  padding: 60px 20px;
+  background-color: #f1f4f8; 
+  border-radius: 10px;
+  max-width: 1162px;
+  margin: 50px auto;
+}
+
+/* Header styling */
+#events header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #007bff;
+}
+
+#events header p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Each category container */
+.events-category {
+  margin-bottom: 50px;
+}
+
+.events-category h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
+
+/* Cards Container */
+.events-category .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Card */
+.events-category .card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events-category .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.events-category .card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.events-category .card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Optional: Different border-top for Upcoming vs Completed */
+.events-category:nth-of-type(1) .card {
+  border-top: 4px solid #28a745;
+}
+
+.events-category:nth-of-type(2) .card {
+  border-top: 4px solid #6c757d; 
+}
+
+/* ====== Footer ====== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Subject overview*/
+
+/* Section wrapper */
+
+#semester-section {
+  padding: 60px 30px;
+  background: #fdfcf9;
+  border-top: 2px solid #e7e3da;
+  border-bottom: 2px solid #e7e3da;
+  max-width: 1162px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#semester-section header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#semester-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.year,
+.semester {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.year:hover,
+.semester:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.year__title,
+.semester__title {
+  display: block;
+  cursor: pointer;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  user-select: none;
+  background: #f9f9ff;
+  border-bottom: 1px solid #ececec;
+  transition: background 0.2s ease;
+}
+
+.year[open] .year__title,
+.semester[open] .semester__title {
+  background: #e8e8ff;
+}
+
+.semesters {
+  padding: 16px 18px 20px;
+}
+
+.subjects {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.subject {
+  width: 100%;
+  text-align: left;
+  background: #fefefe;
+  border: 1px solid #dcdcdc;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.subject:hover {
+  background: #f0f4ff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.subject:active {
+  transform: translateY(1px);
+}
+
+.description-box {
+  margin-top: 28px;
+  padding: 20px 24px;
+  background: #fffaf0;
+  border: 1px solid #f4d4a1;
+  border-radius: 12px;
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.description-box strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.description-box em {
+  color: #666;
+}
+
+/* Subjects Card Grid */
+.subjects-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* Individual Subject Card */
+.subject-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+  text-align: center;
+  font-weight: 500;
+}
+
+.subject-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* Hover effect for better visualization */
+.subject-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background: #f0f4ff;
+}
+
+/* Active/click effect */
+.subject-card:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Optional: Make the cards slightly larger on wide screens */
+@media (min-width: 768px) {
+  .subjects-card-grid {
+    gap: 20px;
+  }
+  .subject-card h3 {
+    font-size: 1.05rem;
+  }
+}
